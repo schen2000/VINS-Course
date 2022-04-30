@@ -79,7 +79,7 @@ void PubImageData()
 		Mat img = imread(imagePath.c_str(), 0);
 		if (img.empty())
 		{
-			cerr << "image is empty! path: " << imagePath << endl;
+			cerr << "image is empty(2)! path: " << imagePath << endl;
 			return;
 		}
 		pSystem->PubImageData(dStampNSec / 1e9, img);
@@ -120,7 +120,7 @@ void DrawIMGandGLinMainThrd(){
 		Mat img = imread(imagePath.c_str(), 0);
 		if (img.empty())
 		{
-			cerr << "image is empty! path: " << imagePath << endl;
+			cerr << "image is empty(1)! path: " << imagePath << endl;
 			return;
 		}
 		//pSystem->PubImageData(dStampNSec / 1e9, img);
