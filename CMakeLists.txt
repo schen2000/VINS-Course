@@ -7,6 +7,12 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
+#find_package(QT5 REQUIRED)
+#message(WARNING "QT5 dir : ${QT5_INCLUDE_DIRS}")
+
+set(BREW /Volumes/Extra/brew/homebrew/)
+set(CMAKE_MODULE_PATH ${BREW})
+
 find_package(Eigen3 REQUIRED)
 find_package(Ceres REQUIRED)
 find_package(Pangolin REQUIRED)
